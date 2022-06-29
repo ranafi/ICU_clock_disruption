@@ -1,5 +1,5 @@
 # ICU_clock_dysreg
-This is R 4.1.2 code used in the analysis of circadian clock dysregulation among people undergoing critical care/illness.
+This is R 4.1.2 code used in the analysis of circadian clock dysregulation among people undergoing critical care/illness. Data was downloaded from GTEx https://www.gtexportal.org/home/datasets. Annotated gene counts (subject metadata with expression data) is available here: https://drive.google.com/drive/folders/1U6tYSMnIrOE7psGIhYXsAEITIcQ59sM3?usp=sharing.
 <ul>
   <li>Differential expression calculated with "run_all_diff_expr_edgeR.R"</li>
   <li>Gene lists, such as those that are ubiquitously differentially expressed across tissues, are created with Generate_FDR_LFC_tables.R</li>
