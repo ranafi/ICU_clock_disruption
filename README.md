@@ -1,7 +1,7 @@
 
 # ICU_clock_dysreg
 
-This is R 4.1.2 code used in the analysis of circadian clock dysregulation among people undergoing critical care/illness. Data was downloaded from GTEx https://www.gtexportal.org/home/datasets. To completely recreate results it is advised you download our annotated gene counts (subject metadata with expression data), which is available here: https://drive.google.com/drive/folders/1U6tYSMnIrOE7psGIhYXsAEITIcQ59sM3?usp=sharing. Copy these into ICU_clock_disruption/Multi-Tissue.../GTEx_counts/
+This is R 4.1.2 code used in the analysis of circadian clock dysregulation among people undergoing critical care/illness. Data was downloaded from GTEx https://www.gtexportal.org/home/datasets. To completely recreate results it is advised you download our annotated gene counts (subject metadata with expression data), which is available here: https://upenn.box.com/v/ICUdysregGTExCounts. Copy these into ICU_clock_disruption/Multi-Tissue.../GTEx_counts/
 
 This repo is divided into 2 main subfolders of code:
 <ol>
