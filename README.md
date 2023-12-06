@@ -1,6 +1,6 @@
 
 # ICU_clock_dysreg
-### Update Dec/6/2023: The run_all_diff_expr_degeR.R script has been updated to combat correct for center and sex, previously it was only correcting for center.
+### Update Dec/6/2023: The run_all_diff_expr_edgeR.R script has been updated to combat correct for center and sex, previously it was only correcting for center.
 
 This is R 4.1.2 code used in the analysis of circadian clock dysregulation among people undergoing critical care/illness. Data was downloaded from GTEx https://www.gtexportal.org/home/datasets. To completely recreate results it is advised you download our annotated gene counts (subject metadata with expression data), which is available here: https://upenn.box.com/v/ICUdysregGTExCounts. Copy these into ICU_clock_disruption/Multi-Tissue.../GTEx_counts/
 
