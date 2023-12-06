@@ -131,10 +131,10 @@ tissue_diff_expr = function(file, min_in_group=50, write = F){
   
   if(length(unique(sex))==1){  #single sex tissue
     single_sex = T
-    combat_data = ComBat_seq(as.matrix(cts[,-rm_subjects]), batch =center, group = age ) #only one sex
+    combat_data = ComBat_seq(as.matrix(cts[,-rm_subjects]), batch =center, group = dthhrdy ) #only one sex
   }else{ #two sex tissue
-    covar_mat = cbind(as.numeric(age), as.numeric(coldata$SEX))
-    combat_data = ComBat_seq(as.matrix(cts[, -rm_subjects]), batch =center, covar_mod = covar_mat )
+    combined_cov = paste0(center, sex) #combat for sex and center
+    combat_data = ComBat_seq(as.matrix(cts[, -rm_subjects]), batch =combined_cov, covar_mod = dthhrdy )
   }
   keep <- rowSums(cpm(combat_data)>1) >= 2 #we're only keeping a gene if it has a cpm of 1 or greater for at least two samples
   combat_data_filt <- combat_data[keep,]
